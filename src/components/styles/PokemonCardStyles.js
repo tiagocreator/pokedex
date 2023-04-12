@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 
+import PokeBallBgImg3 from '../../assets/img/bg-pokebola-3.png';
+
 export const PokemonCardStyle = styled.div`
   display: flex;
   width: 440px;
   height: 210px;
   background-color: ${(props) => props.color};
+  background-image: url(${PokeBallBgImg3});
   border-radius: 12px;
   background-repeat: no-repeat;
   background-size: 250px;
