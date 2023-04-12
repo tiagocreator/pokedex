@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
+import PokeBallBgImg2 from '../../assets/img/bg-pokebola-2.png';
+import PokeBallBgImg1 from '../../assets/img/bg-pokebola-1.png';
+
 export const DetailStyle = styled.div`
+  background-image: url(${PokeBallBgImg1});
   background-position: top center;
   background-size: 1235px 1170px;
   background-repeat: no-repeat;
@@ -98,6 +102,7 @@ export const PokeballContainer = styled.div`
   grid-area: 1/3/3/5;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  background-image: url(${PokeBallBgImg2});
   background-size: cover;
   background-position: right;
   display: grid;
