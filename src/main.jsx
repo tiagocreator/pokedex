@@ -4,6 +4,8 @@ import App from './App';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +13,9 @@ const GlobalStyle = createGlobalStyle`
 }
 
 #root, body{
-max-width: 100vw;
-min-height: 100vh;
+  max-width: 100vw;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
 }
 
 #root{

@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import PokeBallBgImg3 from '../../assets/img/bg-pokebola-3.png';
 
 export const PokemonCardStyle = styled.div`
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
   display: flex;
   width: 440px;
   height: 210px;
@@ -33,6 +35,7 @@ export const CardSectionOne = styled.div`
     line-height: 19px;
     font-weight: 700;
     color: #fff;
+    font-family: 'Inter', sans-serif;
   }
 
   p:nth-child(2) {
@@ -41,6 +44,7 @@ export const CardSectionOne = styled.div`
     font-weight: 700;
     color: #fff;
     text-transform: capitalize;
+    font-family: 'Inter', sans-serif;
   }
 
   div:nth-child(2) {
@@ -88,7 +92,6 @@ export const CardSectionTwo = styled.div`
 `;
 
 export const GetPokemonBtn = styled.button`
-  cursor: pointer;
   background-color: #fff;
   border-radius: 8px;
   border: none;

@@ -4,6 +4,8 @@ import PokeBallBgImg2 from '../../assets/img/bg-pokebola-2.png';
 import PokeBallBgImg1 from '../../assets/img/bg-pokebola-1.png';
 
 export const DetailStyle = styled.div`
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;800&family=Montserrat&display=swap');
+
   background-image: url(${PokeBallBgImg1});
   background-position: top center;
   background-size: 1235px 1170px;
@@ -141,15 +143,16 @@ export const PokemonMoves = styled.div`
 `;
 
 export const PokemonName = styled.p`
+  font-family: 'Inter', sans-serif;
   font-size: 48px;
   line-height: 58px;
   color: #fff;
-  font-weight: 700px;
-  font-style: bold;
+  font-weight: 700;
   text-transform: capitalize;
 `;
 
 export const PokemonId = styled.p`
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 19px;
   color: #fff;
@@ -163,6 +166,7 @@ export const TypeImg = styled.img`
 `;
 
 export const StatsTitle = styled.p`
+  font-family: 'Inter', sans-serif;
   font-weight: 800;
   font-size: 24px;
   line-height: 29.05px;
@@ -195,6 +199,7 @@ export const PokemonFullPhoto = styled.img`
 `;
 
 export const Move = styled.div`
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
