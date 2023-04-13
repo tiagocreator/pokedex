@@ -4,9 +4,17 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { goToHomePage, goToPokedex } from '../../Router';
 import GlobalContext from '../../context/globalContext';
 
-import { PokedexBtn, HeaderStyle, ReleasePokemonBtn, GetPokemonBtn } from '../styles/HeaderStyles';
+import {
+  PokedexBtn,
+  HeaderStyle,
+  ReleasePokemonBtn,
+  GetPokemonBtn,
+  LogoImage,
+  LeftArrow,
+} from '../styles/HeaderStyles';
 
 import Logo from '../../assets/logo.png';
+import LeftArrowImg from '../../assets/img/left-arrow.png';
 
 const Header = ({ page }) => {
   const { setPokedexList, pokedexList, setModal, setSelect } = useContext(GlobalContext);
@@ -27,10 +35,15 @@ const Header = ({ page }) => {
   return (
     <HeaderStyle>
       <div>
-        {page !== 'home' && <span onClick={() => goToHomePage(navigate)}>Todos os Pokémons</span>}
+        {page !== 'home' && (
+          <span onClick={() => goToHomePage(navigate)}>
+            <LeftArrow src={LeftArrowImg} alt=''></LeftArrow>
+            Todos os Pokémons
+          </span>
+        )}
       </div>
       <div>
-        <img src={Logo} alt='logo' />
+        <LogoImage src={Logo} alt='logo'></LogoImage>
       </div>
       <div>
         {page === 'home' && <PokedexBtn onClick={() => goToPokedex(navigate)}>Pokedéx</PokedexBtn>}

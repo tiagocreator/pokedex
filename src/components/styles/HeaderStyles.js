@@ -35,13 +35,6 @@ export const HeaderStyle = styled.div`
     }
   }
 
-  img {
-    height: 113px;
-    @media screen and (max-width: 910px) {
-      height: 80px;
-    }
-  }
-
   span {
     cursor: pointer;
     font-style: normal;
@@ -56,6 +49,9 @@ export const HeaderStyle = styled.div`
       transform: scale(0.8);
       font-size: 20px;
     }
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
@@ -100,4 +96,17 @@ export const GetPokemonBtn = styled.button`
 
 export const ReleasePokemonBtn = styled(GetPokemonBtn)`
   background-color: #ff6262;
+`;
+
+export const LogoImage = styled.img`
+  height: 113px;
+  @media screen and (max-width: 910px) {
+    height: 80px;
+  }
+`;
+
+export const LeftArrow = styled.img`
+  height: 15px;
+  width: 7.3px;
+  margin-inline-end: 10px;
 `;
