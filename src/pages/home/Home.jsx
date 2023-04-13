@@ -4,7 +4,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import GlobalContext from '../../context/globalContext';
 import { goErrorPage, goToHomePage, goToHomePageId } from '../../Router';
 
-import { ActionModal, Header, PokemonCard } from '../../components/index.js';
+import { ActionModal, Header, PokemonCard, Footer } from '../../components/index.js';
 
 import { MainGeral, Title } from '../../GlobalStyles';
 import { PaginationContainer, SelectedPage, PageNumber } from '../styles/HomeStyles.js';
@@ -89,6 +89,7 @@ const Home = () => {
           </PaginationContainer>
         </>
       )}
+      <Footer />
     </>
   );
 };

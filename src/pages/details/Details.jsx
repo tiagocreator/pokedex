@@ -6,7 +6,7 @@ import { types, colors, baseUrl, stats } from '../../data';
 import { goErrorPage } from '../../Router';
 import GlobalContext from '../../context/globalContext';
 
-import { ActionModal, ProgressBar, Header } from '../../components/index';
+import { ActionModal, ProgressBar, Header, Footer } from '../../components/index';
 
 import { Title } from '../../GlobalStyles';
 
@@ -58,7 +58,6 @@ const Details = () => {
     <DetailStyle>
       <ActionModal />
       <Header page={'details'} />
-
       <div>
         <Title>Detalhes</Title>
       </div>
@@ -124,6 +123,7 @@ const Details = () => {
           </PokeballContainer>
         </Container>
       )}
+      <Footer />
     </DetailStyle>
   );
 };

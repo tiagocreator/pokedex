@@ -2,7 +2,7 @@ import { useContext } from 'react';
 
 import GlobalContext from '../../context/globalContext';
 
-import { ActionModal, Header, PokemonCard } from '../../components/index';
+import { ActionModal, Header, PokemonCard, Footer } from '../../components/index';
 
 import { MainGeral, ContainerTitle, Title } from '../../GlobalStyles';
 import { ContainerPokedex } from '../styles/PokedexStyles';
@@ -33,6 +33,7 @@ const Pokedex = () => {
           })}
         </MainGeral>
       )}
+      <Footer />
     </ContainerPokedex>
   );
 };

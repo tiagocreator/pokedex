@@ -2,7 +2,7 @@ import { useContext } from 'react';
 
 import GlobalContext from '../../context/globalContext';
 
-import { Header } from '../../components/index';
+import { Header, Footer } from '../../components/index';
 
 import { Error404Style } from '../styles/Error404Styles';
 
@@ -13,8 +13,9 @@ const Error404 = () => {
     <div>
       <Header />
       <Error404Style>
-        <p>Erro 404: Página não encontrada.</p>
+        <h1>Erro 404: Página não encontrada.</h1>
       </Error404Style>
+      <Footer />
     </div>
   );
 };
