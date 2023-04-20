@@ -84,7 +84,7 @@ const PokemonCard = ({ poke, setPokedexList, pokedexList, setModal, setSelect })
             )}
             {pokedexList.includes(fetchPokemon.name) && (
               <ReleasePokemonBtn onClick={() => releasePokemon(fetchPokemon.name)}>
-                Liberar!
+                Excluir
               </ReleasePokemonBtn>
             )}
           </CardSectionTwo>

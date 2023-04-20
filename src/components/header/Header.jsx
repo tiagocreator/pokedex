@@ -60,7 +60,7 @@ const Header = ({ page }) => {
           ))}
         {page === 'details' && pokedexList.includes(Params.id.toLowerCase()) && (
           <ReleasePokemonBtn onClick={() => releasePokemon(Params.id.toLowerCase())}>
-            Liberar Pokémon
+            Excluir da Pokédex
           </ReleasePokemonBtn>
         )}
       </div>
